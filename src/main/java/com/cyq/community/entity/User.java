@@ -6,10 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import java.util.Date;
 
-@Data
+
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
+@Data
 public class User {
     private Integer id;
     private String username;
@@ -21,5 +22,7 @@ public class User {
     private String activationCode;
     private String headerUrl;
     private Date createTime;
+
+
 
 }

@@ -16,6 +16,18 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
     cache: false
+  mail:
+    host: smtp.sina.com
+    username: 0527cyqdyx@sina.com
+    password: 3a2d0362e691d1dc
+    protocol: smtps
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+
+
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
@@ -23,6 +35,12 @@ mybatis:
   configuration:
     use-generated-keys: true
     map-underscore-to-camel-case: true
+#    mapUnderscoreToCamelCase: true
 logging:
   level:
-   com.cyq.community: debug
+    com.cyq.community: debug
+
+#  community
+community:
+  path:
+    domain: localhost:10086/community
